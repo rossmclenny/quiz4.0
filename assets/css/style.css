@@ -30,25 +30,29 @@ body, html {
   margin-right: 10%;
   align-self: flex-end;
   flex: 1;
+  color: whitesmoke;
 }
 
 
-  .navbar-nav > li{
-    padding-left:30px;
-    padding-right:30px;
-    color: white;
+.navbar-nav > li{
+padding-left:30px;
+padding-right:30px;
+color: white;    
+}
+
+.navbar-nav > li:hover {
+border-left: 1px solid #f200b2;
+border-right: 1px solid #f200b2;
+}
+
+.nav-link {
+  border: none;
+}
+
+
    
-  }
-
-  .navbar-nav > li:hover {
-    border-left: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
-  }
-
- 
-  
   .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/houseclean.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/housecleaning.jpg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,9 +121,14 @@ a{
 
 .box-part{
     background:#FFF;
-    border-radius:0;
-    padding:5px 5px;
+    border: 1px solid #f200b2;
+    border-radius:30px;
+    padding:10px 0px;
     margin:5px 0px;
+}
+.box-part .title {
+  background: #f200b2;
+  color: #FFF;
 }
 .text{
     margin:20px 0px;
@@ -140,7 +149,7 @@ a{
   text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .sub-text {
     flex-direction: column;
   }
